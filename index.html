@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Stock</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Pour le graphique -->
+</head>
+<body>
+  <nav class="sidebar">
+    <h2>Menu</h2>
+    <button id="theme-toggle">Changer de thème</button>
+    <ul>
+      <li data-section="base" class="active">Stock de base</li>
+      <li data-section="reel">Stock réel</li>
+      <li data-section="conso">Consommation</li>
+      <li data-section="employes">Employés</li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="base" class="section active">
+      <h1>Stock de base</h1>
+      <p>Ici, vous pouvez enregistrer le stock de base de vos produits.</p>
+    </section>
+
+    <section id="reel" class="section">
+      <h1>Stock réel</h1>
+      <p>Mettez à jour le stock réel constaté en magasin.</p>
+    </section>
+
+    <section id="conso" class="section">
+      <h1>Consommation</h1>
+      <p>Suivez la consommation des produits :</p>
+      <canvas id="consumptionChart" width="400" height="200"></canvas>
+    </section>
+
+    <section id="employes" class="section">
+      <h1>Employés</h1>
+      <p>Gérez les employés et leur attribution de boissons (max 5/semaine).</p>
+      <div id="employee-stats">
+        <h2>Statistiques des employés</h2>
+        <p>Moyenne des boissons offertes par employé : <span id="average-drinks">0</span></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
