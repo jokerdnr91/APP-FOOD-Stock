@@ -16,14 +16,6 @@ menuItems.forEach(item => {
     });
   });
 });
-const  = {
-  entree: [
-    { nom: "Salade d’avocat", prix: 3.50 },
-    { nom: "Beignets salé", prix: 4.00 },
-    { nom: "Pastel Thon", prix: 4.00 },
-    { nom: "Pastel Boeuf", prix: 4.00}
-  ],
-
 // Dark Mode
 const themeToggle = document.getElementById('theme-toggle');
 
