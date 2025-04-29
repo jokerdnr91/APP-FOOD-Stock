@@ -16,6 +16,13 @@ menuItems.forEach(item => {
     });
   });
 });
+const  = {
+  entree: [
+    { nom: "Salade d’avocat", prix: 3.50 },
+    { nom: "Beignets salé", prix: 4.00 },
+    { nom: "Pastel Thon", prix: 4.00 },
+    { nom: "Pastel Boeuf", prix: 4.00}
+  ],
 
 // Dark Mode
 const themeToggle = document.getElementById('theme-toggle');
@@ -70,9 +77,9 @@ setInterval(checkReminder, 30000);
 
 // Statistiques employés
 const employees = [
-  { name: 'Alice', drinks: 5 },
-  { name: 'Bob', drinks: 3 },
-  { name: 'Charlie', drinks: 4 },
+  { name: 'Sekou', drinks: 0},
+  { name: 'Hana ', drinks: 0},
+  { name: 'Dave ', drinks: 0},
 ];
 
 function updateEmployeeStats() {
